@@ -1,0 +1,43 @@
+.inner {
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+	margin-top: 32px;
+	min-width: 500px;
+}
+
+.titleInfo,
+.dateInfo,
+.eventCalendar,
+.description {
+	display: flex;
+	column-gap: 16px;
+}
+
+.titleInfo {
+	h3 {
+		font-size: clamp(17px, 1.7vw, 24px);
+		line-height: 0.4;
+		letter-spacing: -0.01em;
+	}
+}
+
+.dateInfo {
+	span {
+		display: inline;
+	}
+}
+
+.eventCalendar {
+	.calendar {
+		display: flex;
+		column-gap: 8px;
+		align-items: center;
+	}
+	.color {
+		width: 16px;
+		height: 16px;
+		border-radius: 4px;
+		display: inline-block;
+	}
+}

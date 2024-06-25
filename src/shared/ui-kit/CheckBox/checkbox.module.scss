@@ -1,0 +1,53 @@
+.input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.CheckBoxContainer {
+	display: flex;
+	align-items: center;
+	column-gap: 8px;
+}
+
+span {
+	display: block;
+}
+
+.filledColorDefault {
+	svg {
+		path {
+			fill: var(--color-primary);
+		}
+	}
+}
+
+.empty,
+.filled {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.empty {
+	svg {
+		path {
+			fill: var(--checkbox-border-color);
+		}
+	}
+}
+
+.label {
+	font-size: 12px;
+	line-height: 112%;
+	color: var(--main-color);
+}

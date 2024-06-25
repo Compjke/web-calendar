@@ -1,0 +1,101 @@
+.calendar {
+	flex: 1 1 auto;
+
+	padding-right: 50px;
+	display: flex;
+	column-gap: 20px;
+}
+.times {
+	display: flex;
+	flex-direction: column;
+	margin-top: 120px;
+	row-gap: 44px;
+	width: 60px;
+}
+.time {
+	display: block;
+	font-size: 12px;
+	line-height: 133%;
+	letter-spacing: -0.02em;
+}
+
+.weekMode,
+.dayMode {
+	flex: 1 1 auto;
+	position: relative;
+	background-color: var(--main-light-color);
+	&::after {
+		position: absolute;
+		content: '';
+		height: 2px;
+		box-shadow: 0 1px 2px 0 #dedfe5;
+		background: #dedfe5;
+		width: calc(100% + 80px);
+		top: 65px;
+		right: 0;
+		z-index: 200;
+	}
+}
+.weekMode {
+	grid-template-columns: repeat(7, 1fr);
+	display: grid;
+}
+.dayMode {
+	width: 100%;
+	.wrapper {
+		border: none;
+		max-width: 150px;
+	}
+	.dayWeek {
+		border: 1px solid var(--main-dark-color);
+	}
+}
+
+.wrapper {
+	padding: 5px 7px;
+	border-right: 1px solid #dedfe5;
+}
+
+.dayWeek {
+	padding: 13px 59px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 8px;
+}
+
+.today {
+	background-color: var(--current-date-bg);
+}
+
+.timeCols {
+	// display: flex;
+	// flex-direction: column;
+}
+
+.timeCell {
+	height: 60px;
+	border: 1px solid var(--border);
+	position: relative;
+	z-index: 201;
+	cursor: crosshair;
+	&::before {
+		position: absolute;
+		top: -9px;
+		content: attr(data-time);
+		left: -65px;
+		font-size: 12px;
+	}
+}
+
+.day {
+	font-size: 10px;
+}
+
+.eventsWrapper {
+	position: absolute;
+	width: 100%;
+	z-index: 200;
+	display: flex;
+	padding-right: 10px;
+}

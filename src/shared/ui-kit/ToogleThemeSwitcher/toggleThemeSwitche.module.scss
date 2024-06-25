@@ -1,0 +1,50 @@
+@import '@/app/styles/index.scss';
+.toggleContainer {
+	position: relative;
+	max-width: 100px;
+}
+
+.toggle {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.toggle + label {
+	display: flex;
+	align-items: center;
+	font-size: 10px;
+	cursor: pointer;
+	color: var(--main-color);
+}
+
+.toggle + label::before {
+	content: '';
+	height: 15px;
+	width: 30px;
+	border-radius: 1rem;
+	background-color: var(--toggle-bg);
+	margin-right: 0.5rem;
+	transition: all 0.3s ease;
+}
+.toggle + label::after {
+	content: '';
+	aspect-ratio: 1;
+	width: 12px;
+	border-radius: 50%;
+	background-color: var(--toggle-fg);
+	position: absolute;
+	left: 5%;
+	transition: all 0.3s ease;
+}
+.toggle:checked + label::after {
+	translate: 100% 0%;
+}

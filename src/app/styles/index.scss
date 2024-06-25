@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+	color-scheme: light dark;
+
+	font-family: 'Inter', sans-serif;
+	--color-primary: #00ae1c;
+
+	--main-color: #323749;
+
+	--main-light-color: #fff;
+	--main-dark-color: #323749;
+
+	--bg-button-primary: var(--color-primary);
+	--bg-button-primary-hover: #00ae1c;
+	--bg-button-primary-active: #0cd52b;
+	--bg-button-primary-disabled: #187727;
+
+	--bg-button-secondary: transparent;
+	--bg-button-secondary-hover: #efefef;
+	--bg-button-secondary-active: #e0e0e0;
+	--bg-button-secondary-disabled: #c8c8c8;
+
+	--checkbox-border-color: #323749;
+	--checkbox-filled-color: #323749;
+
+	--toggle-bg: rgb(53, 214, 0);
+	--toggle-fg: #fff;
+	--bg-modal: #fff;
+	--main-bg-color: #f2f5f7;
+	--backdrop-bg: rgba(0, 0, 0, 0.24);
+
+	--date-picker-bg: #fff;
+	--date-picker-shadow: rgba(0, 0, 0, 0.1);
+
+	--drop-down-bg: #fff;
+	--drop-down-hover-shadow: 0 1px 2px 0 rgba(69, 69, 69, 0.25);
+	--drop-down-bg-hover: #efefef;
+	--drop-down-active: #e0e0e0;
+	--drop-dowm-item-hover: #f6f6f6;
+	--drop-dowm-item-selected: #e3e3e3;
+
+	--input-border-color: #737373;
+	--input-border-color-focus: #323749;
+	--input-disabled: #737373;
+
+	--current-date-bg: #dff5e2;
+
+	--border: #dedfe5;
+	--calendar-hover: #f6f7f8;
+}
+
+:root.dark {
+	--main-color: #fff;
+	--color-primary: #fefafa;
+	--main-light-color: #3e393f;
+	--main-dark-color: #7b7a7a;
+	--main-bg-color: #333333;
+	// button
+	--bg-button-primary: var(--color-primary);
+	--bg-button-primary-hover: #868686;
+	--bg-button-primary-active: #414141;
+	--bg-button-primary-disabled: #1414148d;
+
+	--bg-button-secondary: #ffffff;
+	--bg-button-secondary-hover: #cccccc;
+	--bg-button-secondary-active: rgb(203, 203, 203);
+	--bg-button-secondary-disabled: #d3d3d3;
+
+	// chekcbox
+	--checkbox-border-color: #ffffff;
+	// theme switcher
+	--toggle-bg: #b7aeae;
+	--toggle-fg: rgb(255, 255, 255);
+	// modal
+	--bg-modal: #5c5b5b;
+	// --backdrop-bg: rgba(247, 244, 244, 0.76);
+	// datepicker
+	--date-picker-bg: #666666;
+	--date-picker-shadow: rgba(200, 200, 200, 0.508);
+	//dropdown
+	--drop-down-bg: #6b6767;
+	--drop-down-bg-hover: #201818;
+	--drop-down-active: #848484;
+	--drop-dowm-item-hover: #201818;
+	--drop-dowm-item-selected: #848484;
+
+	--input-border-color: #afaeae;
+	--input-border-color-focus: #e5e5e5;
+
+	--current-date-bg: #66f379;
+
+	--calendar-hover: #97989a;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	background: var(--main-bg-color);
+	color: var(--main-color);
+	font-size: 15px;
+	transition:
+		background-color 0.2s ease,
+		color 0.3s ease;
+}
+
+button {
+	border: none;
+	padding: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}

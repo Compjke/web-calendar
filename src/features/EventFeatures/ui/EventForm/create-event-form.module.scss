@@ -1,0 +1,30 @@
+.form {
+	padding-block: 16px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 16px;
+}
+
+.timeDate {
+	display: flex;
+	align-items: end;
+	gap: 16px;
+	position: relative;
+}
+
+.datePicker {
+	position: absolute;
+	top: 50px;
+	left: -6px;
+	z-index: 500;
+}
+
+.submitBtn {
+	align-self: flex-end;
+}
+
+.checkbox {
+	max-width: fit-content;
+	margin-block: 20px;
+	margin-left: 20px;
+}

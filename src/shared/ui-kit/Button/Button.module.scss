@@ -1,0 +1,53 @@
+@import '@/app/styles/index.scss';
+
+.button {
+	border-radius: 8px;
+	padding: 12px 10px;
+	min-width: 63px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	transition: all 0.3s ease;
+	font-size: clamp(10px, 1.1vw, 15px);
+}
+
+.primary {
+	background: var(--bg-button-primary);
+	box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+	color: var(--main-light-color);
+	&:disabled {
+		color: #b9b9b9;
+		background: var(--bg-button-primary-disabled);
+	}
+	&:hover,
+	&:active {
+		box-shadow: 0 2px 2px 0 rgba(92, 225, 113, 0.25);
+		background-color: var(--bg-button-primary-hover);
+	}
+	&:not(:disabled):active {
+		background: var(--bg-button-primary-active);
+	}
+}
+
+.secondary {
+	background: var(--bg-button-secondary);
+	color: var(--main-dark-color);
+	border: 1px solid #dedfe5;
+	box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+	&:disabled {
+		color: #737373;
+		background: var(--bg-button-secondary-disabled);
+	}
+	&:not(:disabled):hover {
+		box-shadow: 0 1px 2px 0 rgba(69, 69, 69, 0.25);
+		background: var(--bg-button-secondary-hover);
+	}
+	&:not(:disabled):active {
+		box-shadow: 0 1px 2px 0 rgba(69, 69, 69, 0.25);
+		background: var(--bg-button-secondary-active);
+	}
+}

@@ -1,0 +1,28 @@
+.event {
+	position: relative;
+	// max-width: 95%;
+	border-radius: 4px;
+	min-height: fit-content;
+	overflow: hidden;
+	scrollbar-width: none;
+	&:hover {
+		overflow-y: auto;
+	}
+	cursor: pointer;
+}
+
+.title {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 15px;
+	line-height: 133%;
+	letter-spacing: -0.02em;
+	font-weight: 400;
+}
+
+.time {
+	font-size: 12px;
+	line-height: 167%;
+	letter-spacing: -0.03em;
+}

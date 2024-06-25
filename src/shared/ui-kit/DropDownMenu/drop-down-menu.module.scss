@@ -1,0 +1,70 @@
+.dropDownContainer {
+	min-width: 80px;
+	font-size: 15px;
+	position: relative;
+}
+
+.dropDownInput {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+	background: var(--drop-down-bg);
+	border: 1px solid #dedfe5;
+	padding: 12px 10px;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	user-select: none;
+	&:hover {
+		box-shadow: var(--drop-down-hover-shadow);
+		background: var(--drop-down-bg-hover);
+	}
+}
+
+.dropDownBtn {
+	background: transparent;
+	cursor: pointer;
+	padding: 5px;
+	path {
+		color: var(--main-color);
+	}
+}
+
+.active {
+	background-color: var(--drop-down-active);
+}
+
+.itemsList {
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	margin-top: 5px;
+	border: 1px solid #dee0e5;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 8px 16px 0 rgba(49, 49, 49, 0.1);
+	background: var(--drop-down-bg);
+	z-index: 10;
+}
+
+.item {
+	padding: 13px 8px 12px 8px;
+	transition: all 0.3s;
+	cursor: pointer;
+	transition: all 0.3s;
+
+	&:first-child {
+		border-radius: 8px 8px 0 0;
+	}
+
+	&:last-child {
+		border-radius: 0 0 8px 8px;
+	}
+	&:hover {
+		background-color: var(--drop-dowm-item-hover);
+	}
+	&.selected {
+		background-color: var(--drop-dowm-item-selected);
+	}
+}

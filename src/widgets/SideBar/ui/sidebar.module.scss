@@ -1,0 +1,68 @@
+.sidebar {
+	padding-left: 60px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 16px;
+}
+
+.button {
+	width: 100%;
+}
+
+.calendars {
+	position: relative;
+	border-radius: 8px;
+	background-color: var(--main-light-color);
+	padding: 16px 8px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.calendarsTop {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.calendarsList {
+	padding-left: 8px;
+	position: relative;
+}
+
+.item {
+	display: flex;
+	justify-content: space-between;
+	padding: 4px 8px;
+	font-size: 12px;
+	border-radius: 8px;
+	transition: background-color 0.3s ease;
+	&:hover {
+		background-color: var(--calendar-hover);
+		& .calendarActions {
+			display: flex;
+		}
+	}
+	&:not(:last-child) {
+		margin-bottom: 8px;
+	}
+}
+
+.calendarsTitle {
+	font-size: 15px;
+}
+
+.modal {
+	width: 100%;
+	position: absolute;
+	min-width: 300px;
+	top: 100px;
+	z-index: 100;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.calendarActions {
+	transition: all 0.3s ease;
+	align-items: center;
+	gap: 8px;
+	display: none;
+}

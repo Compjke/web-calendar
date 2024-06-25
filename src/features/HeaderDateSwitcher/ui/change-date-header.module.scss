@@ -1,0 +1,30 @@
+.root {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+
+.actions {
+	display: flex;
+	gap: 8px;
+}
+.btn {
+	color: var(--main-color);
+	padding: 0;
+	background: transparent;
+	cursor: pointer;
+	border: 1px solid var(--border);
+	box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	width: 36px;
+	min-width: 0;
+	aspect-ratio: 1;
+	font-size: clamp(10px, 1.1vw, 15px);
+}
+
+.date {
+	font-weight: 700;
+}

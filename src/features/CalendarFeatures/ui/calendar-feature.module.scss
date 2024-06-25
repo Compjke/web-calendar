@@ -1,0 +1,30 @@
+.plusBtn {
+	background: transparent;
+	transition: all 0.3s ease;
+	border: none;
+	min-width: 0;
+}
+
+.editBtn,
+.deleteBtn {
+	background: transparent;
+	padding: 0;
+	border: none;
+	min-width: 0;
+}
+
+.deleteMsg {
+}
+
+.deleteModalContent {
+	display: flex;
+	padding-top: 16px;
+	flex-direction: column;
+	row-gap: 16px;
+}
+
+.deleteActions {
+	display: flex;
+	align-self: flex-end;
+	column-gap: 8px;
+}
